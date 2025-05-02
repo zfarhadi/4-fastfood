@@ -15,21 +15,26 @@
             <a class="navbar-brand" href="#">
                 <img src="image/logo.png" alt="لوگوی مارگاریتا" height="45">
             </a>
-            <div class="navbar-nav me-auto">
-                <a class="nav-link" href="index.html">صفحه اصلی</a>
-                <a class="nav-link" href="menu.html">منو</a>
-                <a class="nav-link" href="about.html">درباره ما</a>
-                <a class="nav-link" href="contact.html">تماس با ما</a>
-                <a class="nav-link" href="blogs.html">بلاگ ما</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">صفحه اصلی</a>
+                    <a class="nav-link" href="menu.html">منو</a>
+                    <a class="nav-link" href="about.html">درباره ما</a>
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                    <a class="nav-link" href="blogs.html">بلاگ ما</a>
+                </div>
+                <a href="login.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">ورود</a>
             </div>
-            <a href="login.html" class="btn btn-warning ms-3">ورود</a>
         </div>
     </nav>
 
-    <!-- اسلایدر -->
     <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
+
                 <img src="image/slider1.png" class="d-block w-100" alt="فست فود مارگاریتا">
             </div>
             <div class="carousel-item">
@@ -49,46 +54,55 @@
         </button>
     </div>
 
-    <!-- محتوا -->
-    <div class="container mt-4">
-        <div class="row">
-            <main class="col-12">
-                <section class="text-center">
-                    <h2 class="section-title mb-4">🍽 غذاهای محبوب 🍽</h2>
-                    <div class="row justify-content-center g-4">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card index-card h-100">
-                                <img src="image/BURGER.png" class="card-img-top" alt="برگر مخصوص">
-                                <div class="card-body">
-                                    <h5 class="index-card-title">🍔 برگر مخصوص</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card index-card h-100">
-                                <img src="image/makh.png" class="card-img-top" alt="پیتزا مارگاریتا">
-                                <div class="card-body">
-                                    <h5 class="index-card-title">🍕 پیتزا مارگاریتا</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4">
-                            <div class="card index-card h-100">
-                                <img src="image/SALADSZ.png" class="card-img-top" alt="سالاد سزار">
-                                <div class="card-body">
-                                    <h5 class="index-card-title">🥗 سالاد سزار</h5>
-                                </div>
-                            </div>
+
+    <div class="container mt-5">
+        <h3 class="text-center mb-4">غذاهای محبوب</h3>
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-sm-6 col-md-4">
+                <a href="mahsolat/margarita.html" class="text-decoration-none text-dark">
+                    <div class="card index-card h-100">
+                        <img src="image/makh.png" class="card-img-top" alt="پیتزا مارگاریتا">
+                        <div class="card-body text-center">
+                            <h5 class="index-card-title">🍕 پیتزا مارگاریتا</h5>
                         </div>
                     </div>
-                </section>
-                <section class="text-center mt-5">
-                    <h4>همین حالا سفارشت رو ثبت کن!</h4>
-                    <p>برای دیدن لیست کامل غذاها روی دکمه زیر کلیک کن</p>
-                    <a href="menu.html" class="btn index-btn-orange btn-lg shadow">مشاهده منو 🍔🍕</a>
-                </section>
-            </main>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="mahsolat/caesar.html" class="text-decoration-none text-dark">
+                    <div class="card index-card h-100">
+                        <img src="image/SALADSZ.png" class="card-img-top" alt="سالاد سزار">
+                        <div class="card-body text-center">
+                            <h5 class="index-card-title">🥗 سالاد سزار</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <a href="mahsolat/cheeseburger.html" class="text-decoration-none text-dark">
+                    <div class="card index-card h-100">
+                        <img src="image/chisss.png" class="card-img-top" alt="چیزبرگر">
+                        <div class="card-body text-center">
+                            <h5 class="index-card-title">🍔 چیزبرگر</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
+    </div>
+
+    </section>
+    <section class="text-center mt-5">
+        <h4>همین حالا سفارشت رو ثبت کن!</h4>
+        <p>برای دیدن لیست کامل غذاها روی دکمه زیر کلیک کن</p>
+        <a href="menu.html" class="btn index-btn-orange btn-lg shadow">مشاهده منو 🍔🍕</a>
+    </section>
+    </main>
+    </div>
     </div>
 
     <div class="container mt-5">
