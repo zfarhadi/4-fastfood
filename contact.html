@@ -12,56 +12,54 @@
 </head>
 
 <body class="contact-body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="image/logo.png" alt="لوگوی مارگاریتا" height="45">
             </a>
-
-            <div class="navbar-nav me-auto">
-                <a class="nav-link" href="index.html">صفحه اصلی</a>
-                <a class="nav-link" href="menu.html">منو</a>
-                <a class="nav-link" href="about.html">درباره ما</a>
-                <a class="nav-link" href="contact.html">تماس با ما</a>
-                <a class="nav-link" href="blogs.html">بلاگ ما</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">صفحه اصلی</a>
+                    <a class="nav-link" href="menu.html">منو</a>
+                    <a class="nav-link" href="about.html">درباره ما</a>
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                    <a class="nav-link" href="blogs.html">بلاگ ما</a>
+                </div>
+                <a href="login.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">ورود</a>
             </div>
-
-            <a href="login.html" class="btn btn-warning ms-3">ورود</a>
         </div>
     </nav>
-    <div class="registration-wrapper">
-        <form action="success.html" method="post" class="registration-form">
-            <div class="form-icon-wrapper">
-                <span><i class="icon icon-user user-icon"></i></span>
-            </div>
 
-            <div class="form-group">
-                <input type="text" class="form-control form-input" id="username" placeholder="نام کاربری">
-            </div>
+    <div class="container mt-5 pt-5">
+        <div class="registration-wrapper">
+            <form action="success.html" method="post" class="registration-form shadow p-4 rounded">
 
-            <div class="form-group">
-                <input type="password" class="form-control form-input" id="password" placeholder="رمز عبور">
-            </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-input" id="username" placeholder="نام کاربری" required>
+                </div>
 
-            <div class="form-group">
-                <input type="text" class="form-control form-input" id="address" placeholder="آدرس">
-            </div>
+                <div class="form-group">
+                    <input type="password" class="form-control form-input" id="password" placeholder="رمز عبور" required>
+                </div>
 
-            <div class="form-group">
-                <input type="text" class="form-control form-input" id="phone-number" placeholder="شماره تماس">
-            </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-input" id="address" placeholder="آدرس" required>
+                </div>
 
-            <div class="form-group">
-                <button type="submit" class="btn btn-block submit-btn">ایجاد حساب</button>
-            </div>
-        </form>
+                <div class="form-group">
+                    <input type="text" class="form-control form-input" id="phone-number" placeholder="شماره تماس" required>
+                </div>
 
-        <div class="social-wrapper text-center">
-            <div class="social-icons">
-                <img src="image/logo.png" alt="لوگو" class="footer-logo">
-            </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block submit-btn">ایجاد حساب</button>
+                </div>
+            </form>
         </div>
     </div>
+
     <footer class="text-center py-4 mt-5 index-footer">
         <div class="container">
             <h5>📍 آدرس ما</h5>

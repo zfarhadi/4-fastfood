@@ -3,67 +3,226 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>درباره ما - مارگاریتا</title>
+    <title>درباره ما</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="about-body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+<body class="about">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="image/logo.png" alt="لوگوی مارگاریتا" height="45">
             </a>
-
-            <div class="navbar-nav me-auto">
-                <a class="nav-link" href="index.html">صفحه اصلی</a>
-                <a class="nav-link" href="menu.html">منو</a>
-                <a class="nav-link" href="about.html">درباره ما</a>
-                <a class="nav-link" href="contact.html">تماس با ما</a>
-                <a class="nav-link" href="blogs.html">بلاگ ما</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">صفحه اصلی</a>
+                    <a class="nav-link" href="menu.html">منو</a>
+                    <a class="nav-link" href="about.html">درباره ما</a>
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                    <a class="nav-link" href="blogs.html">بلاگ ما</a>
+                </div>
+                <a href="login.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">ورود</a>
             </div>
-            <a href="login.html" class="btn btn-warning ms-3">ورود</a>
         </div>
     </nav>
-    <section class="about-section py-3 py-md-5">
+
+
+
+    <section class="about-section py-5" style="padding-top: 120px;">
         <div class="container">
-            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-6">
-                    <img class="img-fluid rounded about-image" loading="lazy" src="image/fast.jpg" alt="تصویر درباره ما">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="image/fast.jpg" alt="تصویر درباره ما" class="img-fluid rounded-4 shadow-lg">
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="row justify-content-xl-center">
-                        <div class="col-12 col-xl-10">
-                            <h2 class="about-title mb-3">درباره ما</h2>
-                            <p class="about-text">
-                                در فست فود مارگاریتا، طعم، کیفیت و رضایت شما اولویت ماست...
-                            </p>
-                            <div class="about-contact-info">
-                                <div class="about-info-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <p class="about-info-text">آدرس: قم، پردیسان، بلوار دانشگاه...</p>
-                                </div>
-                                <div class="about-info-item">
-                                    <i class="fab fa-instagram"></i>
-                                    <p class="about-info-text">margarita@</p>
-                                </div>
-                                <div class="about-info-item">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <p class="about-info-text">شماره تماس: 32809510-025</p>
-                                </div>
-                            </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">درباره مارگاریتا</h2>
+                    <p>
+                        مارگاریتا تنها یک فست فود نیست؛ تجربه‌ای از طعم بی‌نظیر، کیفیت بالا و خدمات صمیمانه است. ما با استفاده از مواد اولیه تازه، منویی متنوع و محیطی دلنشین، تلاش می‌کنیم تا لحظاتی خوشمزه و به‌یادماندنی برای شما بسازیم.
+                    </p>
+                    <div class="about-contact-info mt-4">
+                        <p><i class="fas fa-map-marker-alt"></i> قم، پردیسان، بلوار دانشگاه، خیابان اندیشه</p>
+                        <p><i class="fab fa-instagram"></i> @margarita</p>
+                        <p><i class="fas fa-phone-alt"></i> 025-32809510</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="history-section bg-white py-5">
+        <div class="container">
+            <h2 class="section-title text-center">تاریخچه ما</h2>
+            <p class="text-center">
+                مارگاریتا در سال ۱۳۹۵ با هدف ارائه غذاهای باکیفیت و محیطی صمیمی تاسیس شد. طی سال‌ها با توسعه منو، افزایش رضایت مشتریان و گسترش فضای فیزیکی، اکنون یکی از محبوب‌ترین فست فودهای منطقه هستیم.
+            </p>
+        </div>
+    </section>
+    <section class="awards-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center">افتخارات ما</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="image/bartar.png" class="card-img-top" alt="طعم برتر استان">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">کسب عنوان طعم برتر استان</h5>
+                            <p class="card-text">در سال ۱۳۹۹ توسط انجمن رستوران‌داران قم</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="image/rezayat.png" class="card-img-top" alt="نشان رضایت مشتری">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">نشان رضایت مشتری</h5>
+                            <p class="card-text">برای سه سال متوالی از سوی پلتفرم‌های سفارش غذا</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="image/behdasht.png" class="card-img-top" alt="لوح بهداشت غذایی">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">لوح بهداشت غذایی ممتاز</h5>
+                            <p class="card-text">با کسب نمره کامل از بازرسان وزارت بهداشت</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="text-center py-4 mt-5 index-footer">
+    <section class="team-section bg-white py-5">
         <div class="container">
-            <h5>📍 آدرس ما</h5>
+            <h2 class="section-title text-center">نظرات مشتریان</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <blockquote class="blockquote p-3 rounded shadow-sm">
+                        <p>غذاها همیشه تازه هستن، ممنون از مارگاریتا!</p>
+                        <footer class="blockquote-footer mt-2">س. کاظمی</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <blockquote class="blockquote p-3 rounded shadow-sm">
+                        <p>سرویس‌دهی عالی، همیشه دقیق و به موقع .</p>
+                        <footer class="blockquote-footer mt-2">ف. محمدی</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <blockquote class="blockquote p-3 rounded shadow-sm">
+                        <p>فضای صمیمی، پرسنل خوش‌برخورد !</p>
+                        <footer class="blockquote-footer mt-2">م. احمدپور</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center">تیم مارگاریتا</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="image/mr1.png" class="card-img-top" alt="آقای امیر رضایی">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">آقای امیر رضایی</h5>
+                            <p class="card-text">مدیر کل مارگاریتا با بیش از ۱۵ سال تجربه در صنعت رستوران‌داری</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="image/mrs.png" class="card-img-top" alt="سرآشپز نسرین احمدی">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">سرآشپز نسرین احمدی</h5>
+                            <p class="card-text">سرآشپز ارشد با تخصص در غذاهای فست فود و بین‌المللی</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center shadow-sm h-100">
+                        <img src="image/mr2.png" class="card-img-top" alt="آقای علی سلطانی">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">آقای علی سلطانی</h5>
+                            <p class="card-text">مدیر روابط عمومی و پشتیبانی مشتریان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section bg-white py-5">
+        <div class="container">
+            <h2 class="section-title text-center">سوالات پرتکرار</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+                        آیا امکان سفارش تلفنی وجود دارد؟
+                    </button>
+                    </h2>
+                    <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            بله، می‌توانید از طریق شماره 025-32809510 سفارش خود را ثبت کنید.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+                        آیا مارگاریتا ارسال به سراسر قم دارد؟
+                    </button>
+                    </h2>
+                    <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            بله، در تمام نقاط شهر قم ارسال داریم.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
+                        آیا غذاها قابل شخصی‌سازی هستند؟
+                    </button>
+                    </h2>
+                    <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            بله، شما می‌توانید مواد دلخواه یا آلرژی‌زا را حذف یا جایگزین کنید.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container py-5">
+        <h2 class="section-title text-center">چرا مارگاریتا؟</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+                <h5>مواد اولیه تازه</h5>
+                <p>ما از بهترین و تازه‌ترین مواد اولیه برای تهیه غذاها استفاده می‌کنیم.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-truck-fast fa-3x text-primary mb-3"></i>
+                <h5>تحویل سریع</h5>
+                <p>غذاهای شما در کوتاه‌ترین زمان ممکن با بسته‌بندی حرفه‌ای به دستتان می‌رسد.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                <h5>رضایت مشتری</h5>
+                <p>بیش از ۹۵٪ مشتریان ما، تجربه مثبت خود را با دیگران به اشتراک گذاشته‌اند.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light py-4">
+        <div class="container">
+            <h5>آدرس ما</h5>
             <p>قم، پردیسان، بلوار دانشگاه، خیابان اندیشه، فست فود مارگاریتا</p>
-            <h5>📞 شماره تماس</h5>
+            <h5>شماره تماس</h5>
             <p>025-32809510</p>
             <hr>
             <p class="small">تمامی حقوق محفوظ است © 2025 | فست فود مارگاریتا</p>
